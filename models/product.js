@@ -17,6 +17,11 @@ var productSchema = new Schema({
     stock: {
         type: Number,
         required: [true, "Stock not provided"]
+    },
+    // to keep track of whether there is an existing order for a product, add in new field here
+    order: {
+        type: Number,
+        default: 0
     }
 });
 
